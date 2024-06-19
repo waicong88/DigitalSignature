@@ -1,0 +1,45 @@
+{
+    "Invoice": {
+      "ID": "INV-001",
+      "IssueDate": "2024-06-18",
+      "InvoiceTypeCode": "380",
+      "DocumentCurrencyCode": "USD",
+      "AccountingSupplierParty": {
+        "Party": {
+          "PartyName": "Supplier Name",
+          "PartyIdentification": {
+            "ID": "123456789"
+          }
+        }
+      },
+      "AccountingCustomerParty": {
+        "Party": {
+          "PartyName": "Customer Name",
+          "PartyIdentification": {
+            "ID": "987654321"
+          }
+        }
+      },
+      "InvoiceLine": {
+        "ID": "1",
+        "InvoicedQuantity": {
+          "unitCode": "EA",
+          "value": "1"
+        },
+        "LineExtensionAmount": {
+          "currencyID": "USD",
+          "value": "100.00"
+        },
+        "Item": {
+          "Description": "Product Description"
+        },
+        "Price": {
+          "PriceAmount": {
+            "currencyID": "USD",
+            "value": "100.00"
+          }
+        }
+      }
+    }
+  }
+  

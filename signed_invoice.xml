@@ -1,0 +1,65 @@
+<root>
+<Invoice>
+  <ID>INV-001</ID>
+  <IssueDate>2024-06-18</IssueDate>
+  <InvoiceTypeCode>380</InvoiceTypeCode>
+  <DocumentCurrencyCode>USD</DocumentCurrencyCode>
+  <AccountingSupplierParty>
+    <Party>
+      <PartyName>Supplier Name</PartyName>
+      <PartyIdentification>
+        <ID>123456789</ID>
+      </PartyIdentification>
+    </Party>
+  </AccountingSupplierParty>
+  <AccountingCustomerParty>
+    <Party>
+      <PartyName>Customer Name</PartyName>
+      <PartyIdentification>
+        <ID>987654321</ID>
+      </PartyIdentification>
+    </Party>
+  </AccountingCustomerParty>
+  <InvoiceLine>
+    <ID>1</ID>
+    <InvoicedQuantity>
+      <unitCode>EA</unitCode>
+      <value>1</value>
+    </InvoicedQuantity>
+    <LineExtensionAmount>
+      <currencyID>USD</currencyID>
+      <value>100.00</value>
+    </LineExtensionAmount>
+    <Item>
+      <Description>Product Description</Description>
+    </Item>
+    <Price>
+      <PriceAmount>
+        <currencyID>USD</currencyID>
+        <value>100.00</value>
+      </PriceAmount>
+    </Price>
+  </InvoiceLine>
+</Invoice>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+<SignedInfo>
+<CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+<SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+<Reference URI="">
+<Transforms>
+<Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+</Transforms>
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+<DigestValue>INXD0x4Yrv1sxcsfQF5XDY0/O8bXoz7eXVW7WzPmabk=</DigestValue>
+</Reference>
+</SignedInfo>
+<SignatureValue>j0f2dxD9m6o/IOJPeXtenpS3E+DcupJMp1ezgdvUz5Uq98tHXSd3HXXAGJCbHhMr
+munBa4Dpi1ReI1hZL8J9PmHc4QTkXkf84kB1/aefyXJtPztnfZyHANv3TkzWA6dR
+jI5P2tmlkTsNOXy67GsG+6lNK9Zi4f6kzEwaGMZs4DXBhES2Qhml2tb77d+VYEc2
+IFNiSp8ZPfDNGFLlr0oZbzfJmWWzekryoK2IIdS0EcU1YMvJw0sjD0VhSicgJtqU
+4/607u5npeaC5ubmpBD005jVcw9JFMbqFA9pnl39p3Yedjac3lOayjmCjj1FCUn0
+8b9vxpjGCR/0Zm8B9JN2qQ==</SignatureValue>
+<KeyInfo>
+<X509Data/>
+</KeyInfo>
+</Signature></root>
